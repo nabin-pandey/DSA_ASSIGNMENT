@@ -1,6 +1,6 @@
  ## Question 1 : To check the mathematical paranthesis in the given equation.
 
-# 1. Introduction 
+# a. Introduction 
 In this program, it is written to check the equal number of the paranthesis exist or not in the given equation.
 
  There are three paranthesis considered are : 
@@ -8,7 +8,7 @@ In this program, it is written to check the equal number of the paranthesis exis
  ii. Curly Bracket :  {}
  iii. Square Bracket : []
 
- ## 2. Data Structure Definition
+ ## b. Data Structure Definition
 
 Stack follows the LIFO (Last In First Out) principle. 
 
@@ -23,7 +23,7 @@ Stack follows the LIFO (Last In First Out) principle.
  top : It stores the index of the top elements of the stack. 
  items : It is an array used to store opening parantheses.
 
-## 3. Main Function Descriptions
+## c. Main Function Descriptions
 
 initStack() : Initialize the stack by setting my top to -1 which indicates an empty stack. 
 
@@ -46,8 +46,28 @@ iii. Pop the bracket and matches bracket when a closing bracket is found.
 iv. If any mismatch or imbalance seems, the function return -1 as false.
 v. If the stack is empty at the end, it returns true. 
 
-## 4. main() Function :
-I have inserted the expression in the form of the array. Each expression is passed into the checkEqual() function. After the checkEqual() evaluation and  the result is printed indicated whether paranthesis are balanced or not. 
+## d. main() Function :
+
+1. There are three expression pre-defined in the form of the array in the beginning of the main function.
+2. The expression are further passed as arguments into the checkEqual() to be checked.
+3. The equation iterates via for loop.
+4. Receive boolean result showing that the brackets are balanced or not.
+5. Based on the result the output is displayed and the program is terminated.
+
+
+## e. Sample Output 
+
+Using the expressions already written in the main functiin:
+
+1. `a + (b - c) * (d`
+2. `m+ [a - b * (c + d * {m)]`
+3. `a + (b - c),`
+
+The output will be:
+
+The expression a + (b - c) * (d does not have balanced parentheses.  
+The expression m+ [a - b * (c + d * {m)] does not have balanced parentheses.  
+The expression a + (b - c), has balanced parentheses.
 
 
 

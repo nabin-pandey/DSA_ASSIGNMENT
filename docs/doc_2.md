@@ -1,6 +1,10 @@
 #Q2 Infix to Postfix Conversion
 
-## 1. Data Structure Defined 
+## a. Introduction 
+
+This program demonstrate the conversion of the expression of the infix to prefix expression. This program is solved by using stack method.
+
+## b. Data Structure Defined 
 
 ### Stack Structure 
 
@@ -11,41 +15,55 @@ typedef struct {
 
 Stack follows the LIFO Principle
 
-## 2. Function Implemented 
+## c. Function Implemented 
 
-### Stack Function
-int isEmpty() : 
-This function checks that the stack is empty or not. 
-
-int isFull():
-This function checks if the stack is full or not.
-
-char pop () : 
-It removes and returns the top elements from the stack. 
-
-char peek() :
-This returns the top element without removing it .
-
-### Conversion Function 
-
-int precedence() : 
-This function purpose is to determine the precedence level of an operator. 
-
-int isOperator() : 
-This function checks whether the character inserted by the user is valid operator or not. 
-
-void convert() : 
- This function converts an infix expression to postfix notation. 
-
- i. Empty stack is intialized. 
- ii. Iterate through the each character in the infix expression and perform the designed solution. 
+**initStack(Stack *s)**
+Initializes the stack by setting top to -1 (empty stack).
 
 
- ### Main Function
+**isFull(Stack *s)**
+Checks whether the stack is full (top == MAX - 1). Returns 1 if full, else 0.
 
- i. Program ask for the input from the user.
- ii. Inputs get read using fgets() .
- iii. Call convert() function
- iv. Display rhe infix expression and postfix operation after the evaluation of the input expression.
+
+**isEmpty(Stack *s)**
+Checks whether the stack is empty (top == -1). Returns 1 if empty, else 0.
+
+
+**push(Stack *s, char item)**
+Pushes (inserts) a character onto the stack if the stack is not full.
+
+
+**pop(Stack *s)**
+Pops (removes and returns) the top character from the stack if not empty; otherwise returns '\0'.
+
+
+**precedence(char ch)**
+Returns the precedence (priority) of arithmetic operators:
+
+
+**isOperator(char ch)**
+Checks if a character is an operator. Returns 1 if yes, else 0.
+
+
+**convert(const char *infix, char *postfix)**
+    - Converts an infix expression to a postfix expression using a stack:
+    - Outputs operands directly to postfix
+    - Uses stack to manage operators and parentheses based on precedence
+    - Pops remaining operators at the end and terminates postfix with '\0'
+
+ ## d. Main Function
+
+ 1. Program ask for the input from the user.
+ 2. Inputs get read using fgets() .
+ 3. Call convert() function.
+ 4. Further operation is evaluated within the function and return the answer that was computed.  
+ 5. Display the result of the provided  infix expression into postfix expression.
+
+ ## e. Sample Output
+ Enter an infix expression: a+b*(c-d)  
+ Postfix expression: abcd-*+
+
+
+
 
 
