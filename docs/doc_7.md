@@ -1,4 +1,4 @@
-# Q8 : Dijkstra's Shortest Path Algorithm
+# Q7 : Dijkstra's Shortest Path Algorithm
 
 ### a. Introduction
 This program implements Dijkstra's algorithm to find the shortest path from a source vertex to all other vertices in a weighted graph. The graph is represented using an adjacency matrix, and the algorithm uses a greedy approach to compute minimum distances.
