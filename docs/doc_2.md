@@ -26,7 +26,7 @@ Initializes the stack by setting top to -1 (empty stack).
 Checks whether the stack is full (top == MAX - 1). Returns 1 if full, else 0.
 
 
-<<<<<<< HEAD
+** HEAD **
 ** isEmpty(Stack *s) **
 Checks whether the stack is empty (top == -1). Returns 1 if empty, else 0.
 
@@ -36,7 +36,6 @@ Pushes (inserts) a character onto the stack if the stack is not full.
 
 
 ** pop(Stack *s) **
-=======
 **isEmpty(Stack * s)**
 Checks whether the stack is empty (top == -1). Returns 1 if empty, else 0.
 
@@ -46,7 +45,6 @@ Pushes (inserts) a character onto the stack if the stack is not full.
 
 
 **pop(Stack * s)**
->>>>>>> 17755602c21123472fc9c74dc5c5cce257029918
 Pops (removes and returns) the top character from the stack if not empty; otherwise returns '\0'.
 
 
@@ -58,9 +56,9 @@ Returns the precedence (priority) of arithmetic operators:
 Checks if a character is an operator. Returns 1 if yes, else 0.
 
 
-<<<<<<< HEAD
+HEAD
 ** convert(const char *infix, char *postfix) **
-=======
+
 **convert(const char * infix, char * postfix)**
 >>>>>>> 17755602c21123472fc9c74dc5c5cce257029918
     - Converts an infix expression to a postfix expression using a stack:
