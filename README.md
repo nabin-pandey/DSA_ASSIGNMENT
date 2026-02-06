@@ -16,11 +16,11 @@ The code is written in C and organized into source files, with accompanying note
   
 
 ##  Documentation
-- [doc_1.md](dics/program_1.md)
-- [doc_2.md](docs/program_2.md)
-- [doc_3.md](docs/program_3.md)
-- [doc_4.md](docs/program_4.md)
-- [doc_5.md](docs/program_5.md)
-- [doc_6.md](docs/program_6.md)
-- [doc_7.md](docs/program_7.md)
-- [doc_8.md](docs/program_8.md)
+- [doc_1.md](docs/doc_1.md)
+- [doc_2.md](docs/doc_2.md)
+- [doc_3.md](docs/doc_3.md)
+- [doc_4.md](docs/doc_4.md)
+- [doc_5.md](docs/doc_5.md)
+- [doc_6.md](docs/doc_6.md)
+- [doc_7.md](docs/doc_7.md)
+- [doc_8.md](docs/doc_8.md)
