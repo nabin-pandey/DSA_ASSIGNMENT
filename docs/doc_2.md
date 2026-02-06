@@ -25,27 +25,27 @@ Initializes the stack by setting top to -1 (empty stack).
 Checks whether the stack is full (top == MAX - 1). Returns 1 if full, else 0.
 
 
-**isEmpty(Stack *s)**
+** isEmpty(Stack *s) **
 Checks whether the stack is empty (top == -1). Returns 1 if empty, else 0.
 
 
-**push(Stack *s, char item)**
+** push(Stack *s, char item) **
 Pushes (inserts) a character onto the stack if the stack is not full.
 
 
-**pop(Stack *s)**
+** pop(Stack *s) **
 Pops (removes and returns) the top character from the stack if not empty; otherwise returns '\0'.
 
 
-**precedence(char ch)**
+** precedence(char ch) **
 Returns the precedence (priority) of arithmetic operators:
 
 
-**isOperator(char ch)**
+** isOperator(char ch) **
 Checks if a character is an operator. Returns 1 if yes, else 0.
 
 
-**convert(const char *infix, char *postfix)**
+** convert(const char *infix, char *postfix) **
     - Converts an infix expression to a postfix expression using a stack:
     - Outputs operands directly to postfix
     - Uses stack to manage operators and parentheses based on precedence
